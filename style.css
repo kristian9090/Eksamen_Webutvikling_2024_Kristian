@@ -17,6 +17,10 @@ body {
     
 }
 
+form {
+    
+}
+
 ul li {
     list-style: none;
     justify-content: space-between;
@@ -38,9 +42,6 @@ ul li {
     border-radius: 20px;
     border: 1px solid #ccc;
 }
-
-
-
 
 a {
     color: #000;
