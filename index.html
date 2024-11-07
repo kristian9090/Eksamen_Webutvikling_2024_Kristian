@@ -12,10 +12,13 @@
 <body>
     <div id="grid-container">
         <header id="global-header">
-            <form>
-                <i class="fa-regular fa-magnifying-glass"></i><input type="text" placeholder="Søkefelt" id="search">
-            </form>
             <nav>
+                <form>
+                    <input type="text" placeholder="Søkefelt" id="search">
+                    <button type="submit" id="search-button">
+                        <i class="fa-regular fa-magnifying-glass" id="search-icon"></i>
+                    </button>
+                </form>
                 <ul id="menu-text">
                     <li>
                         <a href="index.html">Hjem</a>
@@ -24,13 +27,13 @@
                         <a href=#products>Produkter</a>
                     </li>
                     <li class="logo">
-                        <a href="index.html">Logo</a>
+                        <a href="index.html"><strong>Logo</strong></a>
                     </li>
                     <li>
                         <a href="#categories">Kategorier</a>
                     </li>
                     <li>
-                        <a href="#">Kontakt oss</a>
+                        <a href="#footer">Kontakt oss</a>
                     </li>
                 </ul>
                 <ul id="menu-icon">
@@ -67,34 +70,35 @@
                 <h4>Logo</h4>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
            </section>
-           <section id="f-info">
+           <section id="f-contact">
+            <h4>Kontakt</h4>
                 <ul>
-                    <li><i class="fa-solid fa-location-dot"></i></i> Adresse: Eksempelveien 123, 0123 Halden, Norge</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Adresse: Eksempelveien 123, 0123 Halden, Norge</li>
                     <li><i class="fa-solid fa-phone"></i> Telefon: +47 123 45 678</li>
                     <li><i class="fa-solid fa-envelope"></i> E-post: kontakt@eksempel.no</li>
                     <li><i class="fa-solid fa-clock"></i> Åpningstider: Man-Fre 08:00 - 16:00</li>
                 </ul>
             </section>
-            <aside id="f-shortcuts">
+            <section id="f-shortcuts">
             <nav>
-                <p>Snarveier</p>
+                <h4>Snarveier</h4>
                 <ul>
                     <li><a href="#products">Produkter</a></li>
                     <li><a href="#categories">Kategorier</a></li>
                     <li><a href="#">Kontakt oss</a></li>
                 </ul>
             </nav>
-        </aside>
+            </section>
         <section id="f-some">
             <h4>
                 Sosiale medier
             </h4>
             <nav>
                 <ul>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
                 </ul>
             </nav>
         </section>
