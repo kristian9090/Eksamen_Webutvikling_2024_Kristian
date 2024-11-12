@@ -57,8 +57,7 @@ ul {
 ul li {
     list-style: none;
     justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1.5rem;
+    padding: 1rem;
 }
 
 #menu-icon {
@@ -66,7 +65,6 @@ ul li {
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
-    
 }
 
 a {
@@ -86,21 +84,14 @@ a {
     text-align: right;
     justify-content: right;
     align-items: right;
-    display: flex;
-    flex-direction: column;
     h2 {
-        position: absolute;
-        right: 10px;
         max-width: 50%;
         font-size: 2rem;
         padding: 1rem;
     }
 
     p {
-        position: absolute;
-        width: 50%;
-        right: 10px;
-        top: 40%;
+        text-align: right;
         padding: 1rem;
     }
     a {
@@ -125,7 +116,6 @@ a {
         display: inline-flex;
         flex-direction: row;
         text-align: center;
-        align-items: center;
         font-size: 15px;
         background-color: #fff;
         padding: 1rem;
@@ -135,67 +125,40 @@ a {
         height: 50px;
         margin: 1rem;
     }
-    button:hover {
-        color: #fff;
-        background-color:rgb(128, 128, 128);
-    }
     #new-product {
         background-color: #000;
         color: #fff;
     }
-    
     
 }
 
 .product-card {
     display: flex;
     flex-direction: column;
-    picture {
-        position: relative;
-        img {
-            width: 95%;
-            border-radius: 20px;
-        }
-        i {
-            position: absolute;
-            top: 2%;
-            right: 5%;
-            color: #fff;
-            color: transparent;
-            -webkit-text-stroke-width: 2px;
-            -webkit-text-stroke-color: #fff;
-            background-color: rgb(128, 128, 128);
-            box-sizing: border-box;
-            border-radius: 50%;
-            padding: 8px;
-            border: 2px solid rgba(128, 128, 128, 0.5);
-            font-size: 18px;
-            
+    position: relative;
+    text-align: left;
+    picture img {
+        border-radius: 20px;
+    }
+    .product-info {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
 
-        }
-    }
-    a {
-        text-align: left;
-        padding: 1rem;
-    }
-    p {
-        text-align: end;
-    }
-    .total-reviews {
-        
-    }
 }
 
 
 footer {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr;
     width: 100%;
 }
 
 #f-logo {
-
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
     width: 100%;
     h4 {
         font-size: 1.5rem;
@@ -203,37 +166,29 @@ footer {
 }
 
 #f-contact {
+    position: absolute;
     left: 0;
    h4 {
          font-size: 1.5rem;
    }
-    ul {
-        text-align: left;
+ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     li {
         padding-left: 0.5rem;
-        text-align: left
     };
 }
     
 }
 
 #f-shortcuts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     width: 70%;
     h4 {
-        background-color: aqua;
+        justify-content: flex-end;
+        align-items: flex-end;
     }
-}
-f-some {
-
-    width: 100%;
-   display: flex;
-   flex-direction: column;
-}
-#f-some ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: sp;
-    align-items: flex-start;
-    
-
 }
