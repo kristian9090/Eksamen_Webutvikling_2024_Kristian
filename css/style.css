@@ -85,6 +85,7 @@ a {
     justify-content: right;
     align-items: right;
     h2 {
+        right: 10px;
         max-width: 50%;
         font-size: 2rem;
         padding: 1rem;
