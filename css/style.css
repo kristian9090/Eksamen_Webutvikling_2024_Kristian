@@ -150,7 +150,6 @@ a {
 .product-card {
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
     position: relative;
     text-align: left;
     picture img {
@@ -162,7 +161,6 @@ a {
         align-items: center;
     }
     
-=======
     picture {
         position: relative;
         img {
@@ -172,7 +170,7 @@ a {
         i {
             position: absolute;
             top: 2%;
-            right: 5%;
+            right: 7%;
             color: #fff;
             color: transparent;
             -webkit-text-stroke-width: 2px;
@@ -184,7 +182,6 @@ a {
             border: 2px solid rgba(128, 128, 128, 0.5);
             font-size: 18px;
             
->>>>>>> parent of 46dc7c4 (sdadasd)
 
         }
     }
