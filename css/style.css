@@ -202,7 +202,22 @@ a {
         padding-left: 1rem;
     }
     .star-product {
-        flex-direction: row;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+        i {
+            padding: 0.3rem;
+        }
+        .fa-regular.fa-star {
+           color: #000;
+           color: transparent;
+           -webkit-text-stroke-width: 2px;
+           -webkit-text-stroke-color: #000;
+
+        }
     }
 }
 
