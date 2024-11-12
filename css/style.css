@@ -221,6 +221,25 @@ a {
     }
 }
 
+#categories {
+    display: flex;
+    flex-direction: column;
+    h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+    p {
+        text-align: center;
+    }
+    .category-card {
+        picture {
+            img {
+                max-width: 90%;
+            }
+        }
+    }
+}
+
 .review-card{
     display: flex;
     flex-direction: row;
