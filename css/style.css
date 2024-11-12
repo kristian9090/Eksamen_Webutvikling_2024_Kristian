@@ -199,7 +199,7 @@ a {
     p {
         text-align: end;
         padding-right: 1rem;
-        padding-left: 1rem;
+        
     }
     .star-product {
         display: flex;
@@ -207,7 +207,6 @@ a {
         align-items: center;
         width: 100%;
         padding-bottom: 2rem;
-        padding-left: 1rem;
         i {
             padding: 0.3rem;
         }
