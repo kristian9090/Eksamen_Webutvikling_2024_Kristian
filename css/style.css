@@ -114,10 +114,12 @@ a {
     }
 }
 
+
+
 #products {
     align-items: center;
     text-align: center;
-    padding: 1rem;
+    padding: 0;
     h2{
         font-size: 2rem;
     }   
@@ -154,23 +156,33 @@ a {
     text-align: left;
     picture img {
         border-radius: 20px;
+        width: 90%;
     }
     .product-info {
-        flex-direction: row;
+        display: flex;
         justify-content: space-between;
         align-items: center;
+        p {
+            justify-content: space-between;
+            text-align: left;
+        }
     }
     
     picture {
         position: relative;
+        display: flex;
+        justify-content: center; /* Center the img horizontally */
+        align-items: center; /* Center the img vertically */
         img {
-            width: 95%;
+            justify-content: center;
+            align-items: center;
+            width: 98%;
             border-radius: 20px;
         }
         i {
             position: absolute;
             top: 2%;
-            right: 7%;
+            right: 3%;
             color: #fff;
             color: transparent;
             -webkit-text-stroke-width: 2px;
@@ -181,19 +193,24 @@ a {
             padding: 8px;
             border: 2px solid rgba(128, 128, 128, 0.5);
             font-size: 18px;
-            
-
         }
     }
-    a {
-        text-align: left;
-        padding: 1rem;
-    }
+    
     p {
         text-align: end;
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
-    .total-reviews {
-        
+    .star-product {
+        flex-direction: row;
+    }
+}
+
+.review-card{
+    display: flex;
+    flex-direction: row;
+    picture img {
+        max-width: 30px;
     }
 }
 
