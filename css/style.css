@@ -57,7 +57,8 @@ ul {
 ul li {
     list-style: none;
     justify-content: center;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 #menu-icon {
@@ -65,6 +66,7 @@ ul li {
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
+    
 }
 
 a {
@@ -84,7 +86,10 @@ a {
     text-align: right;
     justify-content: right;
     align-items: right;
+    display: flex;
+    flex-direction: column;
     h2 {
+        position: absolute;
         right: 10px;
         max-width: 50%;
         font-size: 2rem;
@@ -92,7 +97,10 @@ a {
     }
 
     p {
-        text-align: right;
+        position: absolute;
+        width: 50%;
+        right: 10px;
+        top: 40%;
         padding: 1rem;
     }
     a {
@@ -117,6 +125,7 @@ a {
         display: inline-flex;
         flex-direction: row;
         text-align: center;
+        align-items: center;
         font-size: 15px;
         background-color: #fff;
         padding: 1rem;
@@ -126,17 +135,27 @@ a {
         height: 50px;
         margin: 1rem;
     }
+    button:hover {
+        color: #fff;
+        background-color:rgb(128, 128, 128);
+    }
     #new-product {
         background-color: #000;
         color: #fff;
     }
     
+    
 }
 
-#product-card {
-    justify-content: left;
-    picture img {
-        border-radius: 20pxs;
+.product-card {
+    display: flex;
+    flex-direction: column;
+    picture {
+        img {
+            width: 95%;
+            border-radius: 20px;
+
+        }
     }
 }
 
