@@ -198,7 +198,6 @@ a {
     
     p {
         text-align: end;
-        padding-right: 1rem;
         
     }
     .star-product {
@@ -221,32 +220,85 @@ a {
 }
 
 #categories {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     h2 {
         text-align: center;
-        font-size: 40px;
+        font-size: 4px;
     }
     p {
         text-align: center;
     }
     .category-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: none; /* Remove the border from the category card itself */
+        position: relative;
+        h3 {
+            position: absolute;
+            
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background color for better readability */
+            padding: 0.5rem;
+            border-radius: 5px;
+            z-index: 1;
+        }
         picture {
-            img {
-                max-width: 90%;
+            display: flex;
+            justify-content: center; /* Center the img horizontally */
+            align-items: center; /* Center the img vertically */
+            width: 100%;
+            position: relative;
+            height: 200px; /* Adjust the height as needed */
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: 5px solid #fff; /* Add solid white border */
+                border-radius: 10px;
+                pointer-events: none; 
+
             }
+            img {
+                max-width: 70%; /* Adjust the max-width to make the image smaller */
+                height: auto; /* Maintain the aspect ratio */
+                filter: blur(5px); /* Apply blur effect */
+                border-radius: 10px;
+            }
+        }
+
+    }
+    
+    
+    
+        
+}
+
+
+
+#reviews {
+    text-align: center;
+    width: 100%;
+    picture {
+        display: flex;
+        justify-content: center; /* Center the img horizontally */
+        align-items: center; /* Center the img vertically */
+        img {
+            width: 40px;
+            border-radius: 20px;
         }
     }
 }
 
-.review-card{
-    display: flex;
-    flex-direction: row;
-    picture img {
-        max-width: 30px;
-    }
-}
 
+    
 
 footer {
     display: flex;
