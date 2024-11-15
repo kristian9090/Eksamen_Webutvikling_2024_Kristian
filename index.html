@@ -50,7 +50,12 @@
     </header>
     <main>
         <section id="banner">
-            <!--Image by <a href="https://pixabay.com/users/the_iop-1181394/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8763490">the_iop</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8763490">Pixabay</a>-->
+            <picture>
+                <!--    /* Image by <a href="https://pixabay.com/users/the_iop-1181394/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8763490">the_iop</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8763490">Pixabay</a> */-->
+                <source media="(max-width:400px)" srcset="bilder/lake-small.png">
+                <source media="(max-width:800px)" srcset="bilder/lake-big.png">
+                <img src="bilder/lake-big.png" alt="et bilde av noen seilbåter med fjell i bakgrunnen">
+            </picture>
             <h2>Lorem ipsum. Curabitur dictum tincidunt elit, consectetur bibendum neque dignissim ut. </h2>
             <p>Quisque sed lorem sapien. In ut velit leo. Proin volutpat justo non tincidunt hendrerit. Nulla sed nisl mi. Mauris sagittis tellus purus, eget sodales libero tristique nec.</p>
             <a href="#">Les mer</a>
@@ -191,50 +196,24 @@
         <section id="categories">
             <h2>Våre mest populære kategorier</h2>
             <p>Oppdag det beste av det beste</p>
-            <article class="category-card">
-               <h3>Kategori 1</h3>
-               <picture>
-                <!--Image by <a href="https://pixabay.com/users/makabera-6773476/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6932222">Markus Kammermann</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6932222">Pixabay</a>-->
-                    <source media="(max-width:400px)" srcset="bilder/forside/hockey-small.jpg">
-                    <source media="(max-width:800px)" srcset="bilder/forside/hockey-big.jpg">
-                    <img src="bilder/forside/hockey-small.jpg" alt="intensiv hockey kamp mellom to sveitsikse lag">
-                </picture>
+            <article id="category-card1" class="category-card">
+               <h3>Kategori 1</h3> 
             </article>
-            <article class="category-card">
+            <article id="category-card2" class="category-card">
                 <h3>Kategori 2</h3>
-                <picture>
-                    <!--Image by <a href="https://pixabay.com/users/luongcung-17314202/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8612554">Cung Lương</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8612554">Pixabay</a>-->
-                    <source media="(max-width:400px)" srcset="bilder/forside/japan-small.jpg">
-                    <source media="(max-width:800px)" srcset="bilder/forside/japan-big.jpg">
-                    <img src="bilder/forside/japan-small.jpg" alt="et bidle av et asiatisk monument på et vann">
-                </picture>
+               
             </article>
-            <article class="category-card">
+            <article id="category-card3" class="category-card">
                 <h3>Kategori 3</h3>
-                <picture>
-                    <!--Image by <a href="https://pixabay.com/users/jose_pachecoph-15197749/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5653140">José Andrés Pacheco Cortés</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5653140">Pixabay</a>-->
-                    <source media="(max-width:400px)" srcset="bilder/forside/papegoye-small.jpg">
-                    <source media="(max-width:800px)" srcset="bilder/forside/papegoye-big.jpg">
-                    <img src="bilder/forside/papegoye-small.jpg" alt="bilde av en grønn papegøye">
-                </picture>
+              
             </article>
-            <article class="category-card">
+            <article id="category-card4" class="category-card">
                 <h3>Kategori 4</h3>
-                <picture>
-                    <!--Image by <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2178863">Pexels</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2178863">Pixabay</a>-->
-                    <source media="(max-width:400px)" srcset="bilder/forside/cargo-small.jpg">
-                    <source media="(max-width:800px)" srcset="bilder/forside/cargo-big.jpg">
-                    <img src="bilder/forside/cargo-small.jpg" alt="Bilde av et A400M cargo fly">
-                </picture>
+               
             </article>
-            <article class="category-card">
+            <article id="category-card5" class="category-card">
                 <h3>Kategori 5</h3>
-                <picture>
-                    <!--Image by <a href="https://pixabay.com/users/nick115-10240673/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3811734">Nick115</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3811734">Pixabay</a>-->
-                    <source media="(max-width:400px)" srcset="bilder/forside/panda-small.jpg">
-                    <source media="(max-width:800px)" srcset="bilder/forside/panda-big.jpg">
-                    <img src="bilder/forside/panda-small.jpg" alt="intensiv hockey kamp mellom to sveitsikse lag">
-                </picture>
+                
             </article>
         </section>
         <section id="reviews">
