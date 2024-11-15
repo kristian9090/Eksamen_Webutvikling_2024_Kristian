@@ -50,15 +50,39 @@
     </header>
     <main>
         <section id="banner">
-            <picture>
-                <!--    /* Image by <a href="https://pixabay.com/users/the_iop-1181394/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8763490">the_iop</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8763490">Pixabay</a> */-->
-                <source media="(max-width:400px)" srcset="bilder/lake-small.png">
-                <source media="(max-width:800px)" srcset="bilder/lake-big.png">
-                <img src="bilder/lake-big.png" alt="et bilde av noen seilbåter med fjell i bakgrunnen">
-            </picture>
-            <h2>Lorem ipsum. Curabitur dictum tincidunt elit, consectetur bibendum neque dignissim ut. </h2>
-            <p>Quisque sed lorem sapien. In ut velit leo. Proin volutpat justo non tincidunt hendrerit. Nulla sed nisl mi. Mauris sagittis tellus purus, eget sodales libero tristique nec.</p>
-            <a href="#">Les mer</a>
+            <div id="scroll-container-banner">
+                <article id="banner1">
+                    <picture>
+                        <!--/* Image by <a href="https://pixabay.com/users/the_iop-1181394/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8763490">the_iop</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8763490">Pixabay</a> */-->
+                        <source media="(max-width:400px)" srcset="bilder/forside/lake-small.jpg">
+                        <source media="(max-width:800px)" srcset="bilder/forside/lake-big.jpg">
+                        <img src="bilder/forside/lake-big.jpg" alt="et bilde av noen seilbåter med fjell i bakgrunnen">
+                    </picture>
+                    <h2>Lorem ipsum. Curabitur dictum tincidunt elit, consectetur bibendum neque dignissim ut. </h2>
+                    <p>Quisque sed lorem sapien. In ut velit leo. Proin volutpat justo non tincidunt hendrerit. Nulla sed nisl mi. Mauris sagittis tellus purus, eget sodales libero tristique nec.</p>
+                    <a href="#">Les mer</a>
+                </article>
+                <article id="banner2">
+                    <picture>
+                        <!--Image by <a href="https://pixabay.com/users/papaya45-216043/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=377796">Sabine Löwer</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=377796">Pixabay</a>-->
+                        <source media="(max-width:800px)" srcset="bilder/forside/sunset-big.jpg">
+                        <img src="bilder/forside/sunset-big.jpg" alt="et bilde av noen seilbåter med fjell i bakgrunnen">
+                    </picture>
+                    <h2>Lorem ipsum. Curabitur dictum tincidunt elit, consectetur bibendum neque dignissim ut. </h2>
+                    <p>Quisque sed lorem sapien. In ut velit leo. Proin volutpat justo non tincidunt hendrerit. Nulla sed nisl mi. Mauris sagittis tellus purus, eget sodales libero tristique nec.</p>
+                    <a href="#">Les mer</a>
+                </article>
+                <article id="banner3">
+                    <picture>
+                        <!--Image by <a href="https://pixabay.com/users/anhannh-11151235/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4027605">Hoàng Anh Vũ</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4027605">Pixabay</a>-->
+                        <source media="(max-width:800px)" srcset="bilder/forside/sun-big.jpg">
+                        <img src="bilder/forside/sun-big.jpg" alt="et bilde av noen seilbåter med fjell i bakgrunnen">
+                    </picture>
+                    <h2>Lorem ipsum. Curabitur dictum tincidunt elit, consectetur bibendum neque dignissim ut. </h2>
+                    <p>Quisque sed lorem sapien. In ut velit leo. Proin volutpat justo non tincidunt hendrerit. Nulla sed nisl mi. Mauris sagittis tellus purus, eget sodales libero tristique nec.</p>
+                    <a href="#">Les mer</a>
+                </article>
+            </div>
         </section>
         <section id="products">
             <h2>Våre mest populære produkter</h2>
@@ -218,7 +242,7 @@
         </section>
         <section id="reviews">
             <h2>Anmeldelser</h2>
-                <div id="scroll-container">
+                <div id="scroll-container-review">
                     <article class="review-card">
                         <picture>
                             <source media="(max-width:400px)" srcset="bilder/forside/f-16-small.jpg">
