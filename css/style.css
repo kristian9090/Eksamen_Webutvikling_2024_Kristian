@@ -98,6 +98,13 @@ a {
             display: flex;
             justify-content: center; 
             align-items: center;
+
+            .fa-solid.fa-arrow-right {
+                display: none;
+            }
+            .fa-solid.fa-arrow-left {
+                display: none;
+            }
                 img {
                     border-radius: 20px;
                     justify-content: center;
@@ -107,6 +114,7 @@ a {
                     object-fit: cover;
                         }
         }
+        
         h2 {
             text-align: right;
             position: absolute;
@@ -159,7 +167,6 @@ a {
         }
           
     }
-    
     
 }
 
@@ -424,8 +431,11 @@ a {
 
 footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-row: 1fr 1fr 1fr;
+    border-top-color: #000;
+    border-top-width: 1px;
+    position: relative;
     
     
     #f-logo {
@@ -462,11 +472,11 @@ footer {
     }   
 
     #f-shortcuts {
-    grid-column: 3/4;
-    grid-row: 2/3;
+        position: absolute;
+        top: 31%;
+        left: 520px;
         width: 70%;
         h4 {
-            text-align: right;
             font-size: 24px;
             margin: 0;
         }
@@ -553,32 +563,66 @@ footer {
             scroll-behavior: smooth; 
             gap: 1rem;
             position: relative;
+        }
+        .fa-solid.fa-arrow-right {
+            display: block !important;
+            position: absolute;
+            color: #000;
+            background-color: rgb(190, 190, 190);
+            box-sizing: border-box;
+            border-radius: 50%;
+            padding: 8px;
+            border: 2px solid rgba(190, 190, 190, 0.5);
+            font-size: 25px;
+            top: 50%;
+            right: 30px;
 
         }
-    }
-    #banner1, #banner2, #banner3 {
-        position: relative;
-        width: 1700px; 
-        /* fikk av copilot, 15.11/24 */
-        flex-shrink: 0; 
-        padding: 0;
-        border-radius: 20px;
+        .fa-solid.fa-arrow-left {
+            display: block !important;
+            position: absolute;
+            color: #000;
+            background-color: rgb(190, 190, 190);
+            box-sizing: border-box;
+            border-radius: 50%;
+            padding: 8px;
+            border: 2px solid rgba(190, 190, 190, 0.5);
+            font-size: 25px;
+            top: 50%;
+            left: 30px;
+        }
+       
+        #banner1, #banner2, #banner3 {
+            position: relative;
+            width: 1680px; 
+            /* fikk av copilot, 15.11/24 */
+            flex-shrink: 0; 
+            padding: 0;
+            border-radius: 20px;
+            
 
         h2 {
             position: absolute;
-            right: 100px;
-            top: 45px;
-            max-width: 40%;
-            font-size: 2rem;
+            right: 70px;
+            top: 100px;
+            max-width: 30%;
+            font-size: 40px;
             padding: 1rem;
         }
         p {
             position: absolute;
             text-align: right;
             width: 40%;
-            right: 20px;
-            bottom: 15%;
+            right: 70px;
+            bottom: 180px;
             padding: 1rem;
+        }
+        a {
+            position: absolute;
+            right: 80px;
+            bottom: 120px;
+            font-size: 20px;
+            width: 80px;
         }
 
         picture img {
@@ -589,6 +633,7 @@ footer {
         }
     }
 
+
     #banner2, #banner3 {
         display: block !important;
         color: #fff;
@@ -596,18 +641,19 @@ footer {
             position: absolute;
             text-align: left;
             right: 100px;
-            top: 25px;
+            top: 100px;
             max-width: 40%;
             padding: 1rem;
         }
         p {
             position: absolute;
             text-align: left;
+            left: 70px;
             
         }
         a {
             position: absolute;
-            left: 60px;
+            left: 80px;
         }
       
     }
@@ -706,15 +752,19 @@ footer {
         justify-content: center;
         align-items: center;
         width: 90%;
+        position: relative;
         h2 {
+            
             font-size: 40px;
             text-align: left;
-            width: 80%;
+            width: 95%;
+            margin-left: 0;
         }
         .review-card {
-        width: 300px;
-        height: 500px;
-        border: none !important;
+            margin: 0 auto;
+            width: 22%;
+            height: 600px;
+            border: none !important;
 
             p {
                 font-size: 20px;
@@ -723,55 +773,52 @@ footer {
         }
     }
 
-    #footer{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        #f-logo {
-            grid-column: 1/4;
-            grid-row: 1/2;
-            h4 {
-                font-size: 40px;
-            }
-            p {
+    footer {
+        max-width: 80%;
+        position: relative;
+    }
+    #f-logo {
+        position: absolute;
+        top: 0;
+        left: 8%;
+        text-align: left;
+        h4 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+    #f-contact {
+        position: absolute;
+        left: 8%;
+        top: 20%;
+     
+       
+        h4 {
+            font-size: 30px;
+        }
+        ul {
+            li {
                 font-size: 20px;
             }
         }
-        #f-contact {
-            grid-column: 1/2;
-            grid-row: 2/3;
-            h4 {
-                font-size: 30px;
-            }
-            ul {
-                li {
-                    font-size: 20px;
-                }
-            }
+    }
+    #f-shortcuts {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        h4 {
+            font-size: 30px;
         }
-        #f-shortcuts {
-            grid-column: 2/3;
-            grid-row: 2/3;
-            h4 {
-                font-size: 30px;
-            }
-            ul {
-                li {
-                    font-size: 20px;
-                }
-            }
-        }
-        #f-some {
-            grid-column: 3/4    ;
-            grid-row: 2/3;
-            h4 {
-                font-size: 30px;
-            }
-            ul {
-                li {
-                    font-size: 20px;
-                }
+        ul {
+            li {
+                font-size: 20px;
             }
         }
     }
+    #f-some {
+        position: absolute;
+    }
 }
+}   
