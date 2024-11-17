@@ -51,9 +51,11 @@ body {
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: #000;
     }
+    .fa-regular.fa-cart-shopping {
+        transition: transform 0.25s ease;
+    }
     .fa-regular.fa-cart-shopping:hover {
-        font-size: larger;
-        justify-content: center;
+        transform: scale(1.5);
     }
 }
 
@@ -512,6 +514,9 @@ footer {
     }
 
 
+
+
+
 @media only screen and (min-width: 800px) {
     #global-header {
         margin-top: 2rem;
@@ -808,7 +813,7 @@ footer {
             }
         }
     }
-    #f-shortcuts {
+    /* #f-shortcuts {
         grid-column: 2/3;
         grid-row: 2/3;
         display: flex;
@@ -828,8 +833,32 @@ footer {
         li {
             font-size: 20px;
         }
+    } */
+    #f-shortcuts {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        width: 10px;
     }
-    #f-some {
+    
+    #f-shortcuts h4 {
+        font-size: 30px;
+    }
+    
+    #f-shortcuts nav {
+        display: flex;
+    }
+    
+    #f-shortcuts ul {
+        flex-direction: column;
+    }
+    
+    #f-shortcuts li {
+        font-size: 20px;
+    }
+    
+    /* #f-some {
         grid-column: 3/4;
         grid-row: 2/3;
         display: flex;
@@ -845,5 +874,24 @@ footer {
                 font-size: 20px;
             }
         }
-    }
+    } */#f-some {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+}
+
+#f-some h4 {
+    font-size: 30px;
+    text-align: left;
+}
+
+#f-some ul {
+    flex-direction: row;
+    text-align: left;
+}
+
+#f-some ul li {
+    font-size: 20px;
+}
 }   
