@@ -556,7 +556,8 @@ a {
     form {
        
         align-items: flex-start;
-        padding: 1rem;
+        padding: 2rem;
+
         h3 {
             text-align: left;
 

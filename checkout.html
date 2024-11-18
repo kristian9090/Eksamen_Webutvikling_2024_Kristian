@@ -99,14 +99,14 @@
                 </section>
                 <section class="checkout-input">
                     <p>Størrelse</p>
-                    <select name="size" id="size">
+                    <select name="size">
                         <option value="small">Small</option>
                         <option value="medium">Medium</option>
                         <option value="large">Large</option>
                         <option value="xlarge">X-Large</option>
                     </select>
                     <p>Antall</p>
-                    <input type="number" id="total-number" min="0">
+                    <input type="number" min="0">
                 </section>
                 <section class="checkout-icon">
                     <i class="fa-regular fa-heart"></i>
@@ -127,14 +127,14 @@
                 </section>
                 <section class="checkout-input">
                     <p>Størrelse</p>
-                    <select name="size" id="size">
+                    <select name="size">
                         <option value="small">Small</option>
                         <option value="medium">Medium</option>
                         <option value="large">Large</option>
                         <option value="xlarge">X-Large</option>
                     </select>
                     <p>Antall</p>
-                    <input type="number" id="total-number" min="0">
+                    <input type="number" min="0">
                 </section>
                 <section class="checkout-icon">
                     <i class="fa-regular fa-heart"></i>
@@ -146,42 +146,47 @@
             <h2>Opplysninger om deg</h2>
             <form id="info-person">
                 <p>Leveringsadresse</p>
-                <label for="first-name" >Fornavn:</label>
-                <input type="text" placeholder="Luke" required>
+                <label for="first-name">Fornavn:</label>
+                <input type="text" id="first-name" placeholder="Luke" required>
                 <label for="last-name">Etternavn:</label>
-                <input type="text" placeholder="Skywalker" required>
+                <input type="text" id="last-name" placeholder="Skywalker" required>
                 <label for="street-address">Gateadresse:</label>
-                <input type="text" placeholder="BRA veien 4" required>
+                <input type="text" id="street-address" placeholder="BRA veien 4" required>
                 <label for="postal-code">Postnummer:</label>
-                <input type="number" placeholder="1010" required>
+                <input type="number" id="postal-code" placeholder="1010" required>
                 <label for="city">Poststed:</label>
-                <input type="text" placeholder="Halden" required>
+                <input type="text" id="city" placeholder="Halden" required>
             </form>
             <form id="info-contact">
                 <p>Kontaktinformasjon</p>
                 <label for="email">E-post adressen din:</label>
-                <input type="email" placeholder="eksempel@gmail.com" required>
+                <input type="email" id="email" placeholder="eksempel@gmail.com" required>
                 <label for="phonenumber">Telefon-nummmeret ditt</label>
-                <input type="number" placeholder="+47 1234 5678" required>
+                <input type="number" id="phonenumber" placeholder="+47 1234 5678" required>
             </form>
             <button type="submit">Lagre</button>
             <button type="reset" id="button">Avbryt</button>
         </section>
         <section id="shipment">
             <h2>Levering</h2>
+            <p>Velg levering</p>
             <form>
-                <h3>Velg levering</h3>
-                <input type="radio">
-                <label for="standard">Standard helt hjem (5-7 dager)</label> 
-                <p>Gratis <i class="fa-solid fa-box"></i></p>
-                <p>Proin interdum congue elit et bibendum. Aenean mauris mauris, vehicula ut lorem non, facilisis consectetur ex. Ut vitae interdum risus. Proin interdum congue elit et bibendum. Aenean mauris mauris, vehicula ut lorem non, facilisis consectetur ex. Ut vitae interdum risus.</p>
-                <input type="radio">
-                <label for="express">Ekspress til utleveringssted (2-3 dager)</label>
-                <p>50kr <i class="fa-solid fa-truck-fast"></i></p>
-                <input type="radio">
-                <label for="overnight">Ekspress helt hjem (2-4 dager)</label>
+                <input type="radio" id="overnight" value="3">
+                <label for="overnight">Ekspress helt hjem kl. (2-4 dager)</label>
                 <p>Leveres helt hjem til deg i arbeidstid 8-16</p>
                 <p>50 kr <i class="fa-solid fa-truck-fast"></i></p>
+                <p>Proin interdum congue elit et bibendum. Aenean mauris mauris, vehicula ut lorem non, facilisis consectetur ex. Ut vitae interdum risus. Proin interdum congue elit et bibendum. Aenean mauris mauris, vehicula ut lorem non, facilisis consectetur ex. Ut vitae interdum risus.</p>
+            </form>
+            <form>
+                <input type="radio" id="express" value="2">
+                <label for="express">Ekspress til utleveringssted (2-3 dager)</label>
+                <p>50kr <i class="fa-solid fa-truck-fast"></i></p>
+            </form>
+            <form>
+                <input type="radio" value="1">
+                <input type="radio" id="standard" value="1">
+                <label for="standard">Standard helt hjem (5-7 dager)</label>
+                <p>Gratis <i class="fa-solid fa-box"></i></p>
             </form>
         </section>
         <section id="payment">
@@ -201,9 +206,9 @@
                 <button type="submit">Betal</button>
                 <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.
                 </p>
-                <label for="terms"></label>
+                <label for="terms">
                     <input type="checkbox" id="terms" name="terms" required> Ja, jeg godtar vilkårene
-                </label><br>
+                </label>
                 <label for="newsletter">
                     <input type="checkbox" id="newsletter" name="newsletter"> Ja takk! Send nyhetsbrev til meg
                 </label>
