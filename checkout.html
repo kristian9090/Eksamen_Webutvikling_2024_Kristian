@@ -25,7 +25,7 @@
                 <li>
                     <a href=#products>Produkter</a>
                 </li>
-                <li class="logo">
+                <li id="logo">
                     <a href="index.html"><strong>Logo</strong></a>
                 </li>
                 <li>
@@ -46,96 +46,140 @@
                     <a href="#"><i class="fa-regular fa-cart-shopping"></i></a>
                 </li>
             </ul>
+           
         </nav>
 
         
     </header>
     <main>
+        <ul id="breadcrumbs">
+            <li><a href="index.html"><i class="fa-solid fa-arrow-left"></i> Fortsett å handle</a></li>
+        </ul>
         <section id="shopping-bag">
             <h2>Shoppingbagen din</h2>
-            <article class="product-card">
+            <article class="checkout-card">
                 <picture>
                     <!--  Image by <a href="https://pixabay.com/users/mockups-41027447/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8751040">mockups</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8751040">Pixabay</a>-->
                     <source media="(max-width:400px)" srcset="bilder/green-small.png">
                     <source media="(max-width:800px)" srcset="bilder/green-big.png">
                     <img src="bilder/green-big.png" alt="Grønn t-skjorte">
                 </picture>
-                <a href="#">Grønn t-skjorte</a>
-                <p>400 Kr</p>
-                <p>Størrelse</p>
-                <select name="size" id="size">
-                    <option value="small">Small</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
-                    <option value="xlarge">X-Large</option>
-                </select>
-                <label for="antall">Antall</label>
-                <input type="number" id="total-number">
-                <span>
+                <section class="checkout-text">
+                    <p><strong>Grønn t-skjorte</strong></p>
+                    <p>400 Kr</p>
+                    <p>Farge: Grønn</p>
+                </section>
+                <section class="checkout-input">
+                    <p>Størrelse</p>
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="xlarge">X-Large</option>
+                    </select>
+                    <p>Antall</p>
+                    <input type="number" id="total-number" min="0">
+                </section>
+                <section class="checkout-icon">
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-solid fa-trash"></i>
-                </span>
+                </section>
             </article>
-            <article class="product-card">
+            <article class="checkout-card">
                 <picture>
                     <!--  Image by <a href="https://pixabay.com/users/mockups-41027447/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8751040">mockups</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8751040">Pixabay</a>-->
                     <source media="(max-width:400px)" srcset="bilder/green-small.png">
                     <source media="(max-width:800px)" srcset="bilder/green-big.png">
                     <img src="bilder/green-big.png" alt="Grønn t-skjorte">
                 </picture>
-                <a href="#">Grønn t-skjorte</a>
-                <p>400 Kr</p>
-                <p>Størrelse</p>
-                <select name="size" id="size">
-                    <option value="small">Small</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
-                    <option value="xlarge">X-Large</option>
-                </select>
-                <label for="antall">Antall</label>
-                <input type="number" id="total-number" >
-                <span>
+                <section class="checkout-text">
+                    <p><strong>Grønn t-skjorte</strong></p>
+                    <p>400 Kr</p>
+                    <p>Farge: Grønn</p>
+                </section>
+                <section class="checkout-input">
+                    <p>Størrelse</p>
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="xlarge">X-Large</option>
+                    </select>
+                    <p>Antall</p>
+                    <input type="number" id="total-number" min="0">
+                </section>
+                <section class="checkout-icon">
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-solid fa-trash"></i>
-                </span>
+                </section>
+            </article>
+            <article class="checkout-card">
+                <picture>
+                    <!--  Image by <a href="https://pixabay.com/users/mockups-41027447/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8751040">mockups</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8751040">Pixabay</a>-->
+                    <source media="(max-width:400px)" srcset="bilder/green-small.png">
+                    <source media="(max-width:800px)" srcset="bilder/green-big.png">
+                    <img src="bilder/green-big.png" alt="Grønn t-skjorte">
+                </picture>
+                <section class="checkout-text">
+                    <p><strong>Grønn t-skjorte</strong></p>
+                    <p>400 Kr</p>
+                    <p>Farge: Grønn</p>
+                </section>
+                <section class="checkout-input">
+                    <p>Størrelse</p>
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="xlarge">X-Large</option>
+                    </select>
+                    <p>Antall</p>
+                    <input type="number" id="total-number" min="0">
+                </section>
+                <section class="checkout-icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </section>
             </article>
         </section>
         <section id="fill-info">
             <h2>Opplysninger om deg</h2>
-            <form>
-                <label for="first-name">Fornavn:</label>
-                <input type="text" required>
+            <form id="info-person">
+                <p>Leveringsadresse</p>
+                <label for="first-name" >Fornavn:</label>
+                <input type="text" placeholder="Luke" required>
                 <label for="last-name">Etternavn:</label>
-                <input type="text" required>
+                <input type="text" placeholder="Skywalker" required>
                 <label for="street-address">Gateadresse:</label>
-                <input type="text" required>
+                <input type="text" placeholder="BRA veien 4" required>
                 <label for="postal-code">Postnummer:</label>
-                <input type="text" required>
+                <input type="number" placeholder="1010" required>
                 <label for="city">Poststed:</label>
-                <input type="text" required>
-                <label for="email">Epostadressen din:</label>
-                <input type="email" required>
-                <label for="phonenumber">Telefon-nummmeret ditt</label>
-                <input type="number" required>
-                
-                <button type="submit">Lagre</button>
-                <button type="reset">Avbryt</button>
+                <input type="text" placeholder="Halden" required>
             </form>
+            <form id="info-contact">
+                <p>Kontaktinformasjon</p>
+                <label for="email">E-post adressen din:</label>
+                <input type="email" placeholder="eksempel@gmail.com" required>
+                <label for="phonenumber">Telefon-nummmeret ditt</label>
+                <input type="number" placeholder="+47 1234 5678" required>
+            </form>
+            <button type="submit">Lagre</button>
+            <button type="reset" id="button">Avbryt</button>
         </section>
         <section id="shipment">
             <h2>Levering</h2>
             <form>
-                <h3>Velg frakt</h3>
+                <h3>Velg levering</h3>
+                <input type="radio">
                 <label for="standard">Standard helt hjem (5-7 dager)</label> 
+                <p>Gratis <i class="fa-solid fa-box"></i></p>
+                <p>Proin interdum congue elit et bibendum. Aenean mauris mauris, vehicula ut lorem non, facilisis consectetur ex. Ut vitae interdum risus. Proin interdum congue elit et bibendum. Aenean mauris mauris, vehicula ut lorem non, facilisis consectetur ex. Ut vitae interdum risus.</p>
                 <input type="radio">
-                <p>Proin interdum congue elit et bibendum. Aenean mauris mauris, vehicula ut lorem non, facilisis consectetur ex. Ut vitae interdum risus.</p>
-                <p>Gratis <i class="fa-solid fa-box"></i>
-                </p>
                 <label for="express">Ekspress til utleveringssted (2-3 dager)</label>
-                <input type="radio">
                 <p>50kr <i class="fa-solid fa-truck-fast"></i></p>
-                <label for="overnight">Ekspress helt hjem (2-4 dager)</label>
                 <input type="radio">
+                <label for="overnight">Ekspress helt hjem (2-4 dager)</label>
                 <p>Leveres helt hjem til deg i arbeidstid 8-16</p>
                 <p>50 kr <i class="fa-solid fa-truck-fast"></i></p>
             </form>
