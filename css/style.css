@@ -553,16 +553,74 @@ a {
         font-size: 30px;
         margin: 0;
     }
+    #shipment-choose {
+        text-align: left;
+        padding-left: 2rem;
+        font-size: 20px;
+    }
     form {
        
         align-items: flex-start;
-        padding: 2rem;
+        padding: 3rem;
 
         h3 {
             text-align: left;
-
         }
-        
+        label {
+            font-weight: bold;
+        }
+    }
+    .shipment-time {
+        color: #666666;
+        font-weight: bold;
+    }
+}
+
+#payment {
+    text-align: left;
+    padding: 3rem;
+    h2 {
+        font-size: 30px;
+    }
+    #payment-card{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 1rem;
+        input {
+            width: 50%;
+            padding: 1rem;
+            margin: 1rem;
+            border: none;
+        }
+    }
+    #payment-finish {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            font-size: 18px;
+            text-align: center;
+        }
+        h3 {
+            font-size: 25px;
+        }
+        button {
+            color: #fff;
+            width: 100%;
+            padding: 1rem;
+            margin: 1rem auto;
+            background-color: #3b3b3b;
+            border: none;
+            text-align: center;
+            font-size: 18px;
+        }
     }
 }
 
@@ -672,6 +730,7 @@ footer {
         justify-content: center;
         flex: 1;
     }
+    
     #search {
         flex-direction: row;
        
@@ -949,6 +1008,12 @@ footer {
             }
                 
         }
+    }
+
+    #breadcrumbs li {
+        padding: 1rem;
+        align-items: center;
+        
     }
 
     footer {

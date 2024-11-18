@@ -169,51 +169,52 @@
         </section>
         <section id="shipment">
             <h2>Levering</h2>
-            <p>Velg levering</p>
+            <p id="shipment-choose">Velg levering</p>
             <form>
                 <input type="radio" id="overnight" value="3">
-                <label for="overnight">Ekspress helt hjem kl. (2-4 dager)</label>
-                <p>Leveres helt hjem til deg i arbeidstid 8-16</p>
+                <label for="overnight">Ekspress helt hjem</label>
+                <p class="shipment-time"> 2-3 dager</p>
                 <p>50 kr <i class="fa-solid fa-truck-fast"></i></p>
                 <p>Proin interdum congue elit et bibendum. Aenean mauris mauris, vehicula ut lorem non, facilisis consectetur ex. Ut vitae interdum risus. Proin interdum congue elit et bibendum. Aenean mauris mauris, vehicula ut lorem non, facilisis consectetur ex. Ut vitae interdum risus.</p>
             </form>
             <form>
                 <input type="radio" id="express" value="2">
-                <label for="express">Ekspress til utleveringssted (2-3 dager)</label>
+                <label for="express">Ekspress til utleveringssted</label>
+                <p class="shipment-time">1-3 dager</p>
                 <p>50kr <i class="fa-solid fa-truck-fast"></i></p>
             </form>
             <form>
-                <input type="radio" value="1">
                 <input type="radio" id="standard" value="1">
-                <label for="standard">Standard helt hjem (5-7 dager)</label>
+                <label for="standard">Standard helt hjem</label>
+                <p class="shipment-time">5-7 dager</p>
                 <p>Gratis <i class="fa-solid fa-box"></i></p>
+                <p>Leveres helt hjm</p>
             </form>
         </section>
         <section id="payment">
             <h2>Betaling </h2>
-            <i class="fa-regular fa-credit-card"></i>
+            <p id="payment-card">Betal med kort   <i class="fa-regular fa-credit-card"></i></p>
             <form>
-                <label for="card-number">Kortnummer:</label>
-                <input type="number" id="card-number" required>
-                
-                <label for="expiry-date">Utløpsdato:</label>
-                <input type="number" id="expiry-date" required>
-                
-                <label for="cvv">CVV:</label>
-                <input type="number" id="cvv" name="cvv" required>
+                <label for="card-number" >Kortnummer</label>
+                <input type="number" id="card-number" placeholder="1234567890123" required>
+                <label for="expiry-date">Utløpsdato</label>
+                <input type="date" id="expiry-date" placeholder="01/24" required>
+                <label for="cvv">CVV/CVV</label>
+                <input type="number" id="cvv" name="cvv" placeholder="CVC/CVV" required>
+            </form>
+            <section id="payment-finish">
                 <p>Å betale:</p>
-                <p>800 kr</p>
-                <button type="submit">Betal</button>
+                <h3>1300 kr</h3>
+                <button type="submit">Fullfør betalingen</button>
                 <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.
                 </p>
                 <label for="terms">
-                    <input type="checkbox" id="terms" name="terms" required> Ja, jeg godtar vilkårene
+                    <input type="checkbox" id="terms" name="terms" required> Ja takk, jeg vil gjerne motta nyhetsbrev fra dere
                 </label>
                 <label for="newsletter">
-                    <input type="checkbox" id="newsletter" name="newsletter"> Ja takk! Send nyhetsbrev til meg
+                    <input type="checkbox" id="newsletter" name="newsletter"> jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
                 </label>
-            </form>
-
+            </section>
         </section>
 
     </main>
