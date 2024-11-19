@@ -569,6 +569,8 @@ a {
         label {
             font-weight: bold;
         }
+        p {
+        }
     }
     .shipment-time {
         color: #666666;
