@@ -1074,20 +1074,21 @@ footer {
         }
     }
     #fill-info {
-        max-width: 60%;
+        max-width: 50%;
+        width: 40%;
         margin: 0 auto;
         h2 {
-            font-size: 40px;
-            text-align: center;
+            font-size: 30px;
+            text-align: left;
         }
         p {
             text-align: left;
             align-items: center;
-            padding-left: 18rem;
+            padding-left: 4rem;
             margin: 0;
         }
         #info-person {
-            width: 50%;
+            width: 80%;
             height: 200px;
             justify-content: center;
             align-items: center;
@@ -1104,7 +1105,7 @@ footer {
             #last {
                 position: absolute;
                 top: 5%;
-                right: 10px;    
+                right: 20%;    
             }
             #address {
                 position: absolute;
@@ -1116,10 +1117,10 @@ footer {
                 top: 70%;
                 left: 10px;
             }
-            #city {
+            #town {
                 position: absolute;
                 bottom: 5%;
-                right: 10px;
+                right: 20%;
             }
                
             section {
@@ -1132,14 +1133,14 @@ footer {
             }
         }
         button {
-            width: 50%;
+            width: 80%;
             padding: 1rem;
             margin: 1rem auto;
             font-size: 20px;
         }
         #info-contact {
-            max-width: 50%;
-            width: 40%;
+           
+            width: 80%;
             margin: auto;
             margin-top: 4rem;
             align-items: left;
@@ -1159,10 +1160,14 @@ footer {
     #shipment {
         display: flex;
         flex-direction: column;
-        max-width: 60%;
-        width: 50%;
+        max-width: 50%;
+        width: 40%;
         margin: 0 auto;
         justify-content: center;
+        h2 {
+            font-size: 30px;
+            text-align: left;
+        }
         #shipment-choose {
             font-size: 20px;
             text-align: left;
@@ -1187,10 +1192,14 @@ footer {
     #payment {
         display: flex;
         flex-direction: column;
-        max-width: 60%;
-        width: 50%;
+        max-width: 50%;
+        width: 40%;
         margin: 0 auto;
         justify-content: center;
+        h2 {
+            font-size: 30px;
+            text-align: left;
+        }
         #payment-card {
             font-size: 24px;
             font-weight: bold;
