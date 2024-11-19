@@ -1043,7 +1043,7 @@ footer {
                 object-fit: cover;
                 align-items: center;
             }
-            #checkout-info {
+            .checkout-info {
                 flex-direction: column;
                 padding-right: 10%;
             }
