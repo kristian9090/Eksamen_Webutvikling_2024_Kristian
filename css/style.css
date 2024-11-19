@@ -514,6 +514,10 @@ a {
         flex-direction: column;
         align-items: flex-start;
         padding: 2rem;
+        section {
+            display: flex;
+            flex-direction: column;
+        }
         
         input {
             width: 50%;
@@ -1013,16 +1017,196 @@ footer {
     }
 
     #breadcrumbs li {
-        padding: 1rem;
+        margin-left: 22rem;
         align-items: center;
         justify-content: center;
+        font-size: 20px;
         }
         
-
-        #shopping-bag {
-        max-width: 90%;
+    #shopping-bag {
+       h2 {
+            font-size: 40px;
+            text-align:center;
+            padding: 1rem;
+       }
+        .checkout-card {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        max-width: 70%;
+        width: 60%;
         margin: 0 auto;
+        justify-content: center;
+            picture img {
+                width: 300px;
+                height: 300px;
+                object-fit: cover;
+                align-items: center;
+            }
+            #checkout-info {
+                flex-direction: column;
+                padding-right: 10%;
+            }
+            .checkout-text {
+                padding: 2rem;
+                text-align: left;
+                height: 30%;
+                p {
+                    font-size: 20px;
+                    padding: 0;
+                }
+            }
+            .checkout-input {
+                padding: 2rem;  
+                align-items: center;
+                justify-content: flex-start;
+                text-align: left;
+                height: 30%;
+            }
         }
+        .checkout-icon {
+            display: flex;
+            flex-direction: column;
+           i {
+            padding: 1rem;
+            align-items: flex-start;
+           }
+        }
+    }
+    #fill-info {
+        max-width: 60%;
+        margin: 0 auto;
+        h2 {
+            font-size: 40px;
+            text-align: center;
+        }
+        p {
+            text-align: left;
+            align-items: center;
+            padding-left: 18rem;
+            margin: 0;
+        }
+        #info-person {
+            width: 50%;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            position: relative;
+            input {
+                margin: 0;
+            }
+            #first {
+                position: absolute;
+                top: 5%;
+                left: 10px;
+            }
+            #last {
+                position: absolute;
+                top: 5%;
+                right: 10px;    
+            }
+            #address {
+                position: absolute;
+                top: 40%;
+                left: 10px;
+            }
+            #post {
+                position: absolute;
+                top: 70%;
+                left: 10px;
+            }
+            #city {
+                position: absolute;
+                bottom: 5%;
+                right: 10px;
+            }
+               
+            section {
+                gap: 1rem;
+                padding: 1rem;
+            }
+            p {
+                text-align: left;
+                
+            }
+        }
+        button {
+            width: 50%;
+            padding: 1rem;
+            margin: 1rem auto;
+            font-size: 20px;
+        }
+        #info-contact {
+            max-width: 50%;
+            width: 40%;
+            margin: auto;
+            margin-top: 4rem;
+            align-items: left;
+            display: flex;
+            flex-direction: column;
+            p {
+                text-align: left;
+                padding: 0;
+            }
+            input {
+                padding: 0;
+                margin: 1rem;
+            }
+        }
+        }
+
+    #shipment {
+        display: flex;
+        flex-direction: column;
+        max-width: 60%;
+        width: 50%;
+        margin: 0 auto;
+        justify-content: center;
+        #shipment-choose {
+            font-size: 20px;
+            text-align: left;
+            font-weight: bold;
+            
+        }
+        form {
+            section {
+                position: relative;
+                padding: 1rem;
+            }
+            
+            }
+            .kr-icon {
+                position: absolute;
+                right: 20px;
+                top: 10px;
+                
+            }
+        }
+        
+    #payment {
+        display: flex;
+        flex-direction: column;
+        max-width: 60%;
+        width: 50%;
+        margin: 0 auto;
+        justify-content: center;
+        #payment-card {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        form {
+            position: relative;
+        }
+        #CVC {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 30px;
+            bottom: 10px;
+        }
+    }
 
     footer {
         display: grid;
@@ -1031,7 +1215,7 @@ footer {
         max-width: 90%;
         margin: 0 auto;
         padding-bottom: 2rem;
-        gap: 1rem; /* Add gap between grid items */
+        gap: 1rem;
     }
     #f-logo {
         grid-column: 1/4;
@@ -1098,5 +1282,5 @@ footer {
                 font-size: 20px;
             }
         }
-    }
-}   
+}
+}
