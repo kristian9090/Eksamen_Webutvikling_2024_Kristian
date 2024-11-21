@@ -99,78 +99,120 @@
                 <option value="large">Large</option>
                 <option value="xlarge">X-Large</option>
             </select>
-            <button id="cart">
-                <p>Legg til i handlekurv</p>
-            </button>
-            <button id="favorite">
-                <i class="fa-regular fa-heart"></i>
-            </button>
+            <section id="prod-button">
+                <button id="prod-cart">
+                    <p>Legg til i handlekurv</p>
+                </button>
+                <button id="favourite">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+            </section>
         </section>
-        <section>
-            <section class="aside-section">
-                <h3>Lignende produkter</h3>
-                <!--Image by <a href="https://pixabay.com/users/marlon_delibasic-2105117/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2799490">Marlon Delibasic</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2799490">Pixabay</a>-->
-                <picture>
-                    <source media="(max-width:400px)" srcset="bilder/produkter/jeans-small.jpg">
-                    <source media="(max-width:800px)" srcset="bilder/produkter/jeans-big.jpg">
-                    <img src="bilder/jeans-big.jpg" alt="Jeans">
-                </picture>
-                <span class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </span>
-            </section>
-            <section class="aside-section">
-                <h3>Lignende produkter</h3>
-                <!--Image by <a href="https://pixabay.com/users/marlon_delibasic-2105117/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2799490">Marlon Delibasic</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2799490">Pixabay</a>-->
-                <picture>
-                    <source media="(max-width:400px)" srcset="bilder/produkter/jeans-small.jpg">
-                    <source media="(max-width:800px)" srcset="bilder/produkter/jeans-big.jpg">
-                    <img src="bilder/jeans-big.jpg" alt="Jeans">
-                </picture>
-                <span class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </span>
-            </section>
-            <section class="aside-section">
-                <h3>Lignende produkter</h3>
-                <!--Image by <a href="https://pixabay.com/users/marlon_delibasic-2105117/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2799490">Marlon Delibasic</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2799490">Pixabay</a>-->
-                <picture>
-                    <source media="(max-width:400px)" srcset="bilder/produkter/jeans-small.jpg">
-                    <source media="(max-width:800px)" srcset="bilder/produkter/jeans-big.jpg">
-                    <img src="bilder/jeans-big.jpg" alt="Jeans">
-                </picture>
-                <span class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </span>
-            </section>
-            <section class="aside-section">
-                <h3>Lignende produkter</h3>
-                <!--Image by <a href="https://pixabay.com/users/marlon_delibasic-2105117/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2799490">Marlon Delibasic</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2799490">Pixabay</a>-->
-                <picture>
-                    <source media="(max-width:400px)" srcset="bilder/produkter/jeans-small.jpg">
-                    <source media="(max-width:800px)" srcset="bilder/produkter/jeans-big.jpg">
-                    <img src="bilder/jeans-big.jpg" alt="Jeans">
-                </picture>
-                <span class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </span>
-            </section>
+        <section id="prod-similar">
+            <h3>Lignende produkter</h3>
+            <p>Se flere lignende produkter <i class="fa-solid fa-arrow-right"></i></p>
+            <div id="prod-scroll">
+                <article class="product-card">
+                    <picture>
+                        <source media="(max-width:400px)" srcset="bilder/produkter/shoes-small.jpg">
+                        <source media="(max-width:800px)" srcset="bilder/produkter/shoes-big.jpg">
+                        <img src="bilder/produkter/shoes-small.jpg" alt="Brune dress sko">
+                    </picture>
+                    <i class="fa-regular fa-heart"></i>
+                    <section class="product-info">
+                        <p>Jeans</p>
+                        <p class="price">Kr 600</p>
+                    </section>
+                    <section class="star-product">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        <p class="total-reviews"><strong>762 anmeldelser</strong></p>
+                    </span>
+                </article>
+                <article class="product-card">
+                    <picture>
+                        <source media="(max-width:400px)" srcset="bilder/produkter/shoes-small.jpg">
+                        <source media="(max-width:800px)" srcset="bilder/produkter/shoes-big.jpg">
+                        <img src="bilder/produkter/shoes-small.jpg" alt="Brune dress sko">
+                    </picture>
+                    <i class="fa-regular fa-heart"></i>
+                    <section class="product-info">
+                        <p>Jeans</p>
+                        <p class="price">Kr 600</p>
+                    </section>
+                    <section class="star-product">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        <p class="total-reviews"><strong>762 anmeldelser</strong></p>
+                    </span>
+                </article>
+                <article class="product-card">
+                    <picture>
+                        <source media="(max-width:400px)" srcset="bilder/produkter/shoes-small.jpg">
+                        <source media="(max-width:800px)" srcset="bilder/produkter/shoes-big.jpg">
+                        <img src="bilder/produkter/shoes-small.jpg" alt="Brune dress sko">
+                    </picture>
+                    <i class="fa-regular fa-heart"></i>
+                    <section class="product-info">
+                        <p>Jeans</p>
+                        <p class="price">Kr 600</p>
+                    </section>
+                    <section class="star-product">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        <p class="total-reviews"><strong>762 anmeldelser</strong></p>
+                    </span>
+                </article>
+                <article class="product-card">
+                    <picture>
+                        <source media="(max-width:400px)" srcset="bilder/produkter/shoes-small.jpg">
+                        <source media="(max-width:800px)" srcset="bilder/produkter/shoes-big.jpg">
+                        <img src="bilder/produkter/shoes-small.jpg" alt="Brune dress sko">
+                    </picture>
+                    <i class="fa-regular fa-heart"></i>
+                    <section class="product-info">
+                        <p>Jeans</p>
+                        <p class="price">Kr 600</p>
+                    </section>
+                    <section class="star-product">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        <p class="total-reviews"><strong>762 anmeldelser</strong></p>
+                    </span>
+                </article>
+                <article class="product-card">
+                    <picture>
+                        <source media="(max-width:400px)" srcset="bilder/produkter/shoes-small.jpg">
+                        <source media="(max-width:800px)" srcset="bilder/produkter/shoes-big.jpg">
+                        <img src="bilder/produkter/shoes-small.jpg" alt="Brune dress sko">
+                    </picture>
+                    <i class="fa-regular fa-heart"></i>
+                    <section class="product-info">
+                        <p>Jeans</p>
+                        <p class="price">Kr 600</p>
+                    </section>
+                    <section class="star-product">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        <p class="total-reviews"><strong>762 anmeldelser</strong></p>
+                    </span>
+                </article>
+            </div>
         </section>
     </main>
     <footer>
