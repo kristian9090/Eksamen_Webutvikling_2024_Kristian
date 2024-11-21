@@ -445,7 +445,7 @@ a {
 
 #shopping-bag {
     padding-top: 3rem;
-    
+    border: #c9c9c9 1px solid;
     h2 {
         text-align: left;
         padding: 1rem;
@@ -503,30 +503,31 @@ a {
 #fill-info {
     display: flex;
     flex-direction: column;
-    
-    padding-top: 3rem;
+    border: #c9c9c9 1px solid;
+    margin-top: 3rem;
     h2 {
         text-align: left;
-        padding: 2rem;
+        padding-left: 2rem;
+    }
+    p {
+        padding-left: 2rem;
+        margin: 0;
     }
     form {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 2rem;
+        padding-left: 2rem;
         section {
             display: flex;
             flex-direction: column;
         }
-        
         input {
-            width: 50%;
+            width: 100%;
             padding: 1rem;
             margin: 1rem;
-            border: none;
-            
+            border: #c9c9c9 1px solid;
         }
-        
     }
     button {
         color: #fff;
@@ -549,8 +550,8 @@ a {
 }
 
 #shipment {
-   
-    padding-top: 3rem;
+    border: #c9c9c9 1px solid;
+    margin-top: 3rem;
     h2 {
         text-align: left;
         padding: 2rem;
@@ -563,15 +564,23 @@ a {
         font-size: 20px;
     }
     form {
-       
         align-items: flex-start;
         padding: 3rem;
-
-        h3 {
-            text-align: left;
+        section {
+            border: #c9c9c9 1px solid;
+            margin-top: 1rem;
+            box-sizing: border-box;
+        }
+        input {
+            margin-left: 1rem;
+            margin-top: 1rem;
         }
         label {
             font-weight: bold;
+            margin: 0 auto;
+        }
+        p {
+            margin: 1rem;
         }
         
     }
@@ -583,13 +592,16 @@ a {
 
 #payment {
     text-align: left;
-    padding: 3rem;
+    border: #c9c9c9 1px solid;
+    margin-top: 3rem;
     h2 {
         font-size: 30px;
+        padding: 2rem;
     }
     #payment-card{
         font-size: 20px;
         font-weight: bold;
+        padding: 2rem;
         margin-bottom: 0;
         i {
             padding-left: 0.5rem;
@@ -604,7 +616,8 @@ a {
             width: 50%;
             padding: 1rem;
             margin: 1rem;
-            border: none;
+            
+            border: #c9c9c9 1px solid;
         }
     }
     #payment-finish {
@@ -666,7 +679,7 @@ footer {
     }
     #f-shortcuts {
       position: absolute;
-      top: 29;
+      top: 29%;
       right: 10px;
         h4 {
             margin-bottom: 0;
