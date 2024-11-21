@@ -59,12 +59,6 @@
         </nav>
         <section id="prod-info">
             <section id="prod-img">
-                <picture>
-                    <!--  Image by <a href="https://pixabay.com/users/mockups-41027447/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8751040">mockups</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8751040">Pixabay</a>-->
-                    <source media="(max-width:400px)" srcset="bilder/green-small.png">
-                    <source media="(max-width:800px)" srcset="bilder/green-big.png">
-                    <img src="bilder/green-big.png" alt="Grønn t-skjorte">
-                </picture>
                 <section id="img-small">
                     <picture>
                         <!--  Image by <a href="https://pixabay.com/users/mockups-41027447/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8751040">mockups</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8751040">Pixabay</a>-->
@@ -85,22 +79,30 @@
                         <img src="bilder/green-big.png" alt="Grønn t-skjorte">
                     </picture>
                 </section>
+                <picture>
+                    <!--  Image by <a href="https://pixabay.com/users/mockups-41027447/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8751040">mockups</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8751040">Pixabay</a>-->
+                    <source media="(max-width:400px)" srcset="bilder/green-small.png">
+                    <source media="(max-width:800px)" srcset="bilder/green-big.png">
+                    <img src="bilder/green-big.png" alt="Grønn t-skjorte">
+                </picture>
             </section>
-            <h2>Grønn T-skjorte</h2>
-            <a href="#">Merkenavn</a>
-            <p>400 kr</p>
-            <p>Farge: <strong>Grønn</strong></p>
-            <p>Størrelse:</p>
+            <section id="prod-text">
+                <h2>Grønn T-skjorte</h2>
+                <p id="prod-brand">Merkenavn</p>
+                <p>400 kr</p>
+                <p>Farge: <strong>Grønn</strong></p>
+            </section>
             <select name="size" id="size">
+                <option value="Velg størrelse">Velg størrelse</option>
                 <option value="small">Small</option>
                 <option value="medium">Medium</option>
                 <option value="large">Large</option>
                 <option value="xlarge">X-Large</option>
             </select>
             <button id="cart">
-                <a href="#">Legg til i handlekurv</a>
+                <p>Legg til i handlekurv</p>
             </button>
-            <button id="favorite-button">
+            <button id="favorite">
                 <i class="fa-regular fa-heart"></i>
             </button>
         </section>
