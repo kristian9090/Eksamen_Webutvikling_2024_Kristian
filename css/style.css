@@ -1309,25 +1309,27 @@ footer {
             p {
                 text-align: left;
             }
+        }
         #info-contact {
             margin-left: 11rem;
-            margin-right: 11rem;
-            
-            p {
-                text-align: left;
-                padding: 0;
+            margin-right: 11rem;                
+            label {
+                margin-left: 11rem;
+                margin-right: 11rem;
             }
-            input {
+            p {
                 padding: 0;
-                margin: 1rem;
+                margin-left: 11rem;
+                margin-right: 11rem;
             }
         }
         button {
-            width: 80%;
             padding: 1rem;
             margin: 1rem auto;
             font-size: 20px;
         }
+    }
+}
 
     #shipment {
         border: #c9c9c9 1px solid;
@@ -1355,6 +1357,7 @@ footer {
                 top: 10px;
             }
         }
+    
     #payment {
         border: #c9c9c9 1px solid;
         padding: 1rem;
@@ -1430,6 +1433,3 @@ footer {
             }
         }
     }
-}
-}
-}
