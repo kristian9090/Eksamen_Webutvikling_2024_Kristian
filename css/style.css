@@ -1316,8 +1316,8 @@ footer {
     #fill-info {
         border: #c9c9c9 1px solid;
         padding-top: 1rem;
-        margin-left: 11rem;
-        margin-right: 11rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
         h2 {
             font-size: 30px;
             text-align: left;
@@ -1329,8 +1329,8 @@ footer {
             margin: 0;
         }
         #info-person {
-            margin-left: 11rem;
-            margin-right: 11rem;
+            margin-left: 15rem;
+            margin-right: 15rem;
             align-items: center;
             display: grid;
             grid-template-columns: 1fr 1fr ;
@@ -1339,39 +1339,35 @@ footer {
                 text-align: left;
                 padding: 1rem;
                 margin: 1rem;
-            }
-            input {
-                margin: 0;
-            }
-            #first {
-                grid-column: 1/2;
-                grid-row: 2/3;
-                width: 500px;
-            }
-            #last {
-                grid-column: 2/3;
-                grid-row: 2/3;
-                width: 500px;
-            }
-            #address {
-                grid-column: 1/3;
-                grid-row: 3/4;
-                width: 1120px;
-            }
-            #post {
-                grid-column: 1/2;
-                grid-row: 4/5 ;
-                width: 500px;
-            }
-            #town {
-                grid-column: 2/3;
-                grid-row: 4/5;
-                width: 500px;
-            }
+                }
+                input {
+                    margin: 0;
+                }
+                #first {
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                    
+                }
+                #last {
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+                }
+                #address {
+                    grid-column: 1/3;
+                    grid-row: 3/4;
+                }
+                #post {
+                    grid-column: 1/2;
+                    grid-row: 4/5 ;
+                }
+                #town {
+                    grid-column: 2/3;
+                    grid-row: 4/5;
+                }
             }
             #info-contact {
-                margin-left: 11rem;
-                margin-right: 11rem;
+                margin-left: 15rem;
+                margin-right: 15rem;
                 align-items: center;
                 display: grid;
                 grid-template-columns: 1fr ;
@@ -1379,7 +1375,10 @@ footer {
                 section {
                     text-align: left;
                     padding: 1rem;
-                    margin: 1rem;
+                    margin: 1rem;   
+                }
+                input {
+                    margin: 0;
                 }
                 p {
                     margin-left: 2rem;
@@ -1389,26 +1388,20 @@ footer {
                 #fill-mail {
                     grid-column: 1/2;
                     grid-row: 1/2;
-                    padding: 1rem;
-                    margin: 1rem;
+                    
                 }
                 #fill-number {
                     grid-column: 1/2;
                     grid-row: 2/3;
                 }
-                input {
-                    width: 98%;
-                }
-                button {
-                    width: 95%;
-                }
+               
         }
     }
     #shipment {
         border: #c9c9c9 1px solid;
         height: 800px;
-        margin-left: 11rem;
-        margin-right: 11rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
         h2 {
             text-align: left;
             font-size: 30px;
@@ -1426,8 +1419,8 @@ footer {
             section {
                 position: relative;
                 padding: 1rem;
-                margin-left: 11rem;
-                margin-right: 11rem;
+                margin-left: 15rem;
+                margin-right: 15rem;
             }
             }
             .kr-icon {
@@ -1440,8 +1433,8 @@ footer {
         border: #c9c9c9 1px solid;
         height: 900px;
         align-items: center;
-        margin-left: 11rem;
-        margin-right: 11rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
         justify-content: center;
         h2 {
             font-size: 30px;
@@ -1460,8 +1453,8 @@ footer {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto;
-            margin-left: 11rem;
-            margin-right: 11rem;
+            margin-left: 15rem;
+            margin-right: 15rem;
             section {
                 display: flex;
                 flex-direction: column;
@@ -1481,8 +1474,8 @@ footer {
             }
         }
        #payment-finish {
-        margin-left: 11rem;
-        margin-right: 11rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
        }
     }
 
