@@ -32,7 +32,7 @@
                     <a href="#categories">Kategorier</a>
                 </li>
                 <li>
-                    <a href="#footer">Kontakt oss</a>
+                    <a href="#f-contact">Kontakt oss</a>
                 </li>
             </ul>
             <ul id="menu-icon">
@@ -174,10 +174,14 @@
             </form>
             <form id="info-contact">
                 <p>Kontaktinformasjon</p>
+                <section id="fill-mail">
                     <label for="email">E-post adressen din:</label>
                     <input type="email" id="email" placeholder="eksempel@gmail.com" required>
+                </section>
+                <section id="fill-number">
                     <label for="phonenumber">Telefon-nummmeret ditt</label>
                     <input type="number" id="phonenumber" placeholder="+47 1234 5678" required>
+                </section>
                 <button type="submit">Lagre</button>
                 <button type="reset" id="button">Avbryt</button>
             </form>
@@ -212,10 +216,14 @@
             <h2>Betaling </h2>
             <p id="payment-card">Betal med kort<i class="fa-regular fa-credit-card"></i></p>
             <form>
-                <label for="card-number" >Kortnummer</label>
-                <input type="number" id="card-number" placeholder="1234567890123" required>
-                <label for="expiry-date">Utløpsdato</label>
-                <input type="date" id="expiry-date" required>
+                <section id="fill-card-number">
+                    <label for="card-number" >Kortnummer</label>
+                    <input type="number" id="card-number" placeholder="1234567890123" required>
+                </section>
+                <section id="fill-date">
+                    <label for="expiry-date">Utløpsdato</label>
+                    <input type="date" id="expiry-date" required>
+                </section>
                 <section id="CVC">
                     <label for="cvv">CVV/CVV</label>
                     <input type="number" id="cvv" name="cvv" placeholder="CVC/CVV" required>
