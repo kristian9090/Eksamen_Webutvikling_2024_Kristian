@@ -49,9 +49,11 @@
         </nav>
     </header>
     <main id="main-checkout">
-        <ul id="breadcrumbs">
-            <li><a href="index.html"><i class="fa-solid fa-arrow-left"></i> Fortsett å handle</a></li>
-        </ul>
+        <nav>
+            <ul id="breadcrumbs">
+                <li><a href="index.html"><i class="fa-solid fa-arrow-left"></i> Fortsett å handle</a></li>
+            </ul>
+        </nav>
         <section id="shopping-bag">
             <h2>Shoppingbagen din</h2>
             <article class="checkout-card">
@@ -146,41 +148,39 @@
             </article>
         </section>
         <section id="fill-info">
-            <div id="fill-grid">
-                <h2>Opplysninger om deg</h2>
-                <p>Leveringsadresse</p>
-                <form id="info-person">
-                    <section id="first">
-                        <label for="first-name">Fornavn:</label>
-                        <input type="text" id="first-name" placeholder="Luke" required>
-                    </section>
-                    <section id="last">
-                        <label for="last-name">Etternavn:</label>
-                        <input type="text" id="last-name" placeholder="Skywalker" required>
-                    </section>
-                    <section id="address">
-                        <label for="street-address">Gateadresse:</label>
-                        <input type="text" id="street-address" placeholder="BRA veien 4" required>
-                    </section>
-                    <section id="post">
-                        <label for="postal-code">Postnummer:</label>
-                        <input type="number" id="postal-code" placeholder="1010" required>
-                    </section>
-                    <section id="town">
-                        <label for="city">Poststed:</label>
-                        <input type="text" id="city" placeholder="Halden" required>
-                    </section>
-                </form>
-                <form id="info-contact">
-                    <p>Kontaktinformasjon</p>
-                        <label for="email">E-post adressen din:</label>
-                        <input type="email" id="email" placeholder="eksempel@gmail.com" required>
-                        <label for="phonenumber">Telefon-nummmeret ditt</label>
-                        <input type="number" id="phonenumber" placeholder="+47 1234 5678" required>
-                    <button type="submit">Lagre</button>
-                    <button type="reset" id="button">Avbryt</button>
-                </form>
-            </div>
+            <h2>Opplysninger om deg</h2>
+            <p>Leveringsadresse</p>
+            <form id="info-person">
+                <section id="first">
+                    <label for="first-name">Fornavn:</label>
+                    <input type="text" id="first-name" placeholder="Luke" required>
+                </section>
+                <section id="last">
+                    <label for="last-name">Etternavn:</label>
+                    <input type="text" id="last-name" placeholder="Skywalker" required>
+                </section>
+                <section id="address">
+                    <label for="street-address">Gateadresse:</label>
+                    <input type="text" id="street-address" placeholder="BRA veien 4" required>
+                </section>
+                <section id="post">
+                    <label for="postal-code">Postnummer:</label>
+                    <input type="number" id="postal-code" placeholder="1010" required>
+                </section>
+                <section id="town">
+                    <label for="city">Poststed:</label>
+                    <input type="text" id="city" placeholder="Halden" required>
+                </section>
+            </form>
+            <form id="info-contact">
+                <p>Kontaktinformasjon</p>
+                    <label for="email">E-post adressen din:</label>
+                    <input type="email" id="email" placeholder="eksempel@gmail.com" required>
+                    <label for="phonenumber">Telefon-nummmeret ditt</label>
+                    <input type="number" id="phonenumber" placeholder="+47 1234 5678" required>
+                <button type="submit">Lagre</button>
+                <button type="reset" id="button">Avbryt</button>
+            </form>
         </section>  
         <section id="shipment">
             <h2>Levering</h2>

@@ -53,6 +53,7 @@ body {
     .fa-regular.fa-cart-shopping:hover {
         transform: scale(1.5);
         transition: transform 0.25s ease;
+        
     }
 }
 
@@ -972,6 +973,16 @@ footer {
             }
     }
 
+    #prod-breadcrumbs {
+        margin-left: 19rem;
+        }
+    #breadcrumbs {
+        margin-left: 19rem;
+        padding: 2rem;
+        font-size: 20px;
+    }
+
+
     #search {
         flex-direction: row; 
 
@@ -1246,10 +1257,6 @@ footer {
                 
         }
     }
-    #breadcrumbs li {
-        
-        }
-
     #shopping-bag {
         padding-top: 1rem;
         height: 1200px;
