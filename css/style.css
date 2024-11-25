@@ -18,13 +18,13 @@ body {
             }
             #search-button {
                 position: absolute;
-                right: 10px; 
-                top: 15px;
+                right: 1px; 
+                top: 1px;
                 background: none;
                 border: none;
                 cursor: pointer;
                 color: #000;
-                padding: 0;
+                padding: 1rem;
                 #search-icon {
                     right: 10px;
                     color: #000;
@@ -629,6 +629,7 @@ a {
         }
         h3 {
             font-size: 25px;
+            font-weight: bold;
         }
         button {
             color: #fff;
@@ -960,7 +961,6 @@ footer {
             grid-row: 4/5;
             height: 656px;
             width: 95.5%;
-            
         }
         #category-card5 {
             grid-column: 2/4;
@@ -968,7 +968,6 @@ footer {
             height: 75%;
             width: 80%;
             max-height: 90%;
-           
             }   
     
 }
@@ -990,10 +989,7 @@ footer {
                 justify-content: end;
                 display: flex;
                 align-items: center;
-                #search-button {
-                    right: 15px;
-                    top: 15px;
-                }
+                
             }
             ul {
                 width: 654px;
@@ -1512,6 +1508,9 @@ footer {
        #payment-finish {
         margin-left: 15rem;
         margin-right: 15rem;
+        h3 {
+            font-weight: bold;
+        }
        }
     }
 
