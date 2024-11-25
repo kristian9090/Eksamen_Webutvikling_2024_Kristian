@@ -1044,21 +1044,22 @@ footer {
         padding: 1rem;
         width: 100%;
         height: 1000px;
-      
+        position: relative;
+
+        
         #scroll-container-banner {
             overflow-x: auto; 
             display: flex;
             padding: 1rem;
             scroll-behavior: smooth; 
             gap: 1rem;
-            position: relative;
+            /* position: relative; */
             height: 700px;
             border: #fff 1px solid;
-            border-radius: #fff 100px !important;
         }
         .fa-solid.fa-arrow-right {
-            display: block;
-            position: sticky;
+            display: block !important;
+            position: absolute;
             color: #000;
             background-color: rgb(190, 190, 190);
             box-sizing: border-box;
@@ -1067,14 +1068,12 @@ footer {
             border: 2px solid rgba(190, 190, 190, 0.5);
             font-size: 25px;
             top: 50%;
-            left: 1670px;
-            z-index: 2;
-            width: 40px;
-            height: 40px;
+            right: 40px;
+            z-index: 1;
         }
         .fa-solid.fa-arrow-left {
-            display: block;
-            position: sticky;
+            display: block !important;
+            position: absolute;
             color: #000;
             background-color: rgb(190, 190, 190);
             box-sizing: border-box;
@@ -1083,10 +1082,8 @@ footer {
             border: 2px solid rgba(190, 190, 190, 0.5);
             font-size: 25px;
             top: 50%;
-            left: 10px;
+            left: 40px;
             z-index: 1;
-            width: 40px;
-            height: 40px;
         }
         
        
