@@ -745,7 +745,7 @@ a {
             padding: 1rem;
             display: flex;
             justify-content: space-between;
-            section .fa-regular.fa-star {
+            span .fa-regular.fa-star {
                 color: transparent;
                 -webkit-text-stroke-width: 2px;
                 -webkit-text-stroke-color: #000;
