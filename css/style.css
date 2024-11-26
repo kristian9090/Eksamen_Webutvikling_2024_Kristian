@@ -229,7 +229,6 @@ a {
     flex-direction: column;
     position: relative;
     text-align: left;
-    
     picture {
         position: relative;
         display: flex;
@@ -784,7 +783,6 @@ a {
         scroll-behavior: smooth; 
         .product-card {
             margin: 0.5rem;
-            min-width: 220px;
             .fa-regular.fa-heart:hover {
                 background-color: #ff0000; 
          }
@@ -1173,13 +1171,18 @@ footer {
         }
        #product-flex {
            display: flex;
+           flex-wrap: wrap;
            flex-direction: row;
            justify-content: center;
            align-items: center;
-           flex-wrap: wrap;
-           flex-shrink: 1;
            gap: 1rem;
            margin: 1rem;
+           width: 100%;
+           .product-card {
+            /* Referert til på referanse pdf filen */
+            flex: 1 1 calc(33.33% - 1rem);
+            width: 30%;
+       }
        }
        .fa-regular.fa-heart:hover {
               background-color: #ff0000; 
