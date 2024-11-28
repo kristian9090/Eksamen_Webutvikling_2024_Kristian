@@ -807,6 +807,7 @@ footer {
     flex-direction: column;
     position: relative;
     border-top: solid 1px #3b3b3b75;
+    font-size: 15px;
     #f-logo {
         margin-top: rem;
         h4 {
@@ -835,6 +836,7 @@ footer {
     ul {
         text-align: left;
         align-items: flex-start;
+        max-width: 40%;
         li {
             text-align: left;
             padding: 0.5rem;
@@ -1008,7 +1010,9 @@ footer {
         #menu-text {
             li {
                 padding: 1rem;
-                
+                a {
+                    font-size:  1 1 calc(33.33% - 1rem);
+                }
             }
             }
             #menu-icon .fa-regular.fa-cart-shopping {
@@ -1466,12 +1470,14 @@ footer {
             text-align: left;
             font-weight: bold;
             padding-left: 15%;
-
         }
         form {
             max-width: 100%;
             width: 70%;
             margin: 0 auto;
+            section {
+                position: relative;
+            }
             .kr-icon {
                 position: absolute;
                 right: 20px;
