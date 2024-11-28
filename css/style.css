@@ -802,7 +802,7 @@ a {
 
 
 footer {
-    margin-top: 2rem;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -1492,6 +1492,7 @@ footer {
         margin-left: 11rem;
         margin-right: 11rem;
         justify-content: center;
+        margin-bottom: 2rem;
         h2 {
             font-size: 30px;
             text-align: left;
@@ -1587,10 +1588,13 @@ footer {
                 margin-bottom: 0;
             }
         }
+        #f-contact ul {
+            max-width: 100%;
+        }
        #f-shortcuts {
             position: static;
             top: auto;
-            right: auto;
+            
             h4 {
                 margin: 0;
             }
